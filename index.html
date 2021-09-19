@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <title>Mesta rên</title>
 <script>
 function playSound() {
@@ -53,12 +52,18 @@ function playSound() {
 		transition: all 0.2s ease-in;
 		transform: scale(1.1);
 	}
+	.mesta_avt {
+		display: block;
+		padding-bottom: 10px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 </style>
 </head>
 <body>
 	<div class="center">
-		<img src="mestafacereal2.png" style="width:300px">
-		<p><button class="bmestaren bhover" onclick="playSound()">Nghe Mesta rên!</button></p>
+		<img class="mesta_avt" src="mestafacereal2.png" style="width:300px">
+		<button class="bmestaren bhover" onclick="playSound()">Nghe Mesta rên!</button>
 		<audio id="audio" src="mesta_ren.mp3"></audio>
 	</div>
 </body>
