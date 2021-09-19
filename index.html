@@ -3,11 +3,18 @@
 <head>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <title>Mesta rên</title>
+<script>
+function playSound() {
+	var audio = document.getElementById("audio");
+	audio.currentTime = 0;
+	audio.play();
+}
+</script>
 <style>
 	body {
 		text-align: center;
 		color: white;
-		background: url('mesta_fall.jpg');
+		background:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('mesta_fall.jpg');
 		background-repeat: no-repeat;
 		background-position: center;
 		background-attachment: fixed;
@@ -51,8 +58,8 @@
 <body>
 	<div class="center">
 		<img src="mestafacereal2.png" style="width:300px">
-		<audio id="mesta_ren" src="mesta_ren.mp3"></audio>
-		<p><button class="bmestaren bhover" onclick="document.getElementById('mesta_ren').play()">Nghe Mesta rên!</button></p>
+		<p><button class="bmestaren bhover" onclick="playSound()">Nghe Mesta rên!</button></p>
+		<audio id="audio" src="mesta_ren.mp3"></audio>
 	</div>
 </body>
 </html>
